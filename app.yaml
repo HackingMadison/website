@@ -1,0 +1,25 @@
+application: hackingmadison
+version: 1
+runtime: python
+api_version: 1
+
+derived_file_type:
+- python_precompiled
+
+handlers:
+- url: /
+  static_files: index.html
+  upload: index.html
+  
+- url: /css
+  static_dir: css
+  
+- url: /img
+  static_dir: img
+
+- url: /js
+  static_dir: js
+
+- url: /favicon.ico
+  static_files: img/favicon.ico
+  upload: favicon.ico
