@@ -1,0 +1,17 @@
+/*!
+ * HackingMadison
+ *
+ * Custom styling not covered by the Boostrap theming 
+ * color palette: http://www.colourlovers.com/palette/379413/you_are_beautiful
+ *  purple : #351330
+ *  blue : #424254
+ *  green : #64908A
+ *  yellow : #E8CAA4
+ *  red : #CC2A41
+ */
+
+hr {
+  color:#64908A;
+  background-color:#64908A;
+  height:4px;
+}
