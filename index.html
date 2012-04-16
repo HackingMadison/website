@@ -8,6 +8,7 @@
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/hm.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -46,6 +47,20 @@
               <li><a href="#data">Datasets</a></li>
               <li><a href="#resources">Resources</a></li>
               <li><a href="#roster">Roster</a></li>
+              <li class="dropdown">
+                <a href="#"
+                      class="dropdown-toggle"
+                      data-toggle="dropdown">
+                      Apps
+                      <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://smsmybus.com">SMSMyBus</a></li>
+                  <li><a href="http://hydrants.hackingmadison.org">Adopt-a-hydrant</a></li>
+                  <li><a href="http://busradarapp.com/">BusRadar</a></li>
+                  <li><a href=""></a><li>
+                </ul>
+              </li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -77,7 +92,7 @@
                    </dl>
                    <dl>
                        <dt><a href="http://motherfools.com/fools.php?uri=bus">Mother Fool's custom kiosk</a></dt>
-                       <dd>A customizable browser dashboard that shows arrival times for two stops</dd>
+                       <dd>A customizable browser dashboard that shows arrival times for two stops of your choosing</dd>
                    </dl>
                    <dl>
                        <dt>Google Gadget</dt>
@@ -89,7 +104,7 @@
             <div class="span4">
               <h2>Adopt-a-Hydrant</h2>
                <p><a href="http://hydrants.hackingmadison.org">Adopt-a-hydrant</a> is an open-source project built and shared by <a href=http://codeforamerica.org>Code for America</a>. It encourages citizen engagement by letting individuals sign up as a caregiver for a fire hydrant when the snow storms hit. This Rails app has been customized and <a href=http://hydrants.hackingmadison.org>deployed</a> here in Madison.</p>
-              <p><a class="btn" href="http://hydrants.hackingmadison.org">View details »</a></p>
+              <p><a class="btn" href="http://hydrants.hackingmadison.org">Launch App »</a></p>
            </div>
            
             <div class="span4">
@@ -102,13 +117,13 @@
                       <li>find route details</li>
                   </ul>
               </p>
-              <p><a class="btn" href="http://smsmybus.com/api">View details »</a></p>
+              <p><a class="btn" href="http://smsmybus.com/api">View API »</a></p>
             </div>
           </div>
           
           <div class="row">
             <div class="span4">
-              <h2>What's next?</h2>
+              <h2>Project X</h2>
                <p>Your project goes here! <a href="mailto:team@hackingmadison.org">Email us</a> and let us know what you're working on.</p>
             </div>
           </div>
@@ -138,22 +153,34 @@
 
         <hr>
         <section id="resources">
-            <h1>Hackery <small>Some of the tools in our toolbox</h1>
+            <h1>Hackery <small>Some of the tools in our toolbox</small></h1>
+            <p>The number and breadth of tools and resources available to technologists is what makes all of this work possible. We've taken advantage of a number of open source projects, hosted solutions and APIs to build these apps. These tools also enable us to stay better connected. Please join the conversation.</p>
             <div class="row">
               <div class="span4">
                 <h2>Github</h2>
-                 <p>Find our open source projects on the <a href="https://github.com/hackingmadison">HackingMadison github page</a> </p>
-                <p><a class="btn" href="https://github.com/hackingmadison">View details »</a></p>
+                 <p>Find our open source projects on the HackingMadison <a href="https://github.com/hackingmadison">github page</a> </p>
+                <p><a class="btn" href="https://github.com/hackingmadison">Github page »</a></p>
               </div>
               <div class="span4">
-                <h2>PaaS</h2>
-                 <p>Google App Engine, Heroku, Twilio</p>
-                <p><a class="btn" href="">View details »</a></p>
+                <h2>Hosted Services</h2>
+                 <p>Platforms as a Service (PaaS) offer awesome opportunities to drive the hosting cost of many projects to zero. Take advantage of it!</p>
+                 <ul>
+                 <li><a href="http://appengine.google.com">Google App Engine</a></li>
+                 <li><a href="http://heroku.com">Heroku</a></li>
+                 <li><a href="http://www.twilio.com">Twilio</a></li>
+                 </ul>
              </div>
               <div class="span4">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/hero.html#">View details »</a></p>
+                <h2>Community</h2>
+                <p>HackingMadison organizes and communicates in a few different ways. Here are some different ways to find the group online.</p>
+                <dl class="dl-horizontal">
+                    <dt>Discussion</dt>
+                    <dd>A <a href="">Google Group</a> email list</dd>
+                    <dt>Twitter</dt>
+                    <dd><a href="http://twitter.com/hackingmadison">@hackingmadison</a></dd>
+                    <dt>Email</dt>
+                    <dd>Email us directly at <a mailto:"team@hackingmadison.org">team@hackingmadison.org</a></dd>
+                </dl>
               </div>
             </div>
         </section>
@@ -163,15 +190,15 @@
             <h1>Civic Hacking Roster <small>Meet the Doers</small></h1>
             <p>Madison is filled with talented people that volunteer in all sorts of great ways. This group has given their time, energy and expertise to build some of these great projects for Madison and help move the dialog along to encourage the city to open up more data and be more accessible for its citizens.</p>
                   <ul class="thumbnails">
-                    <li class="span2">
+                    <li class="span3">
                       <div class="thumbnail">
-                        <img src="img/profiles/gtracy.jpg" alt="greg">
-                        <h3>Greg Tracy</h3>
+                        <img src="img/profiles/gtracy2.jpg" alt="greg">
+                        <h3>Greg Tracy <small><a href="http://twitter.com/gregtracy">@gregtracy</a></small></h3>
                         <p>By day, Greg is the CTO of <a href="http://asthmapolis.com">Asthmapolis</a> and father of three. He's the creator of SMSMyBus.</p>
                         <p><a class="btn" href="http://gregtracy.com">more »</a></p>
                       </div>
                     </li>
-                    <li class="span2">
+                    <li class="span3">
                       <div class="thumbnail">
                         <img src="http://placehold.it/260x180" alt="">
                         <h3>Eric Paulson</h3>
@@ -191,11 +218,11 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./index_files/jquery.js"></script>
-    <script src="./index_files/bootstrap-transition.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <!--<script src="./index_files/bootstrap-transition.js"></script>
     <script src="./index_files/bootstrap-alert.js"></script>
     <script src="./index_files/bootstrap-modal.js"></script>
-    <script src="./index_files/bootstrap-dropdown.js"></script>
     <script src="./index_files/bootstrap-scrollspy.js"></script>
     <script src="./index_files/bootstrap-tab.js"></script>
     <script src="./index_files/bootstrap-tooltip.js"></script>
@@ -204,7 +231,7 @@
     <script src="./index_files/bootstrap-collapse.js"></script>
     <script src="./index_files/bootstrap-carousel.js"></script>
     <script src="./index_files/bootstrap-typeahead.js"></script>
-
+    -->
   
 
 </body></html>
